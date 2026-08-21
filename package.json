@@ -1,0 +1,21 @@
+{
+  "name": "livelocation",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "kafkajs": "^2.2.4",
+    "socket.io": "^4.8.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.2.0"
+  }
+}
