@@ -26,11 +26,15 @@ kafkaconsumer.run({
     io.emit("locationUpdate", locationData);
   }
 });
+// i am grood
 
+app.post("/location",express.json(), async (req,res) =>{
+  //create a new location update message and send it to kafka it is very neccessary condition for a good devloper to be improved as a specific job role 
+})
+console.log("kafka is running on the port ok with this port ")
 app.get("/health", (req, res) => {
   res.json({ status: "OK" });
 });
-
 io.on("connection", (socket) => {
   console.log("A user connected");
   socket.on("locationUpdate", (data) => {
